@@ -10,7 +10,7 @@ public interface ProductDao {
 
 	public List<Product> findAll();
 
-	public Product findByProductId(int productId);
+	
 	public void remove(int proIid);
 	public Product search(int productId);
 }

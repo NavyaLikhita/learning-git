@@ -21,17 +21,10 @@ Show product
 <td>${pro.productId}</td>
 <td>${pro.productName}</td>
 <td>${pro.productPrice}</td>
-
 </tr>
 </a:forEach>
 
-<a  var="pro" items="${dataobj}">
-<tr>
-<td>${pro.productId }</td>
-<td>${pro.productName}</td>
-<td>${pro.productPrice}</td>
-</tr>
-</a>
+
 
 </table>
 </body>

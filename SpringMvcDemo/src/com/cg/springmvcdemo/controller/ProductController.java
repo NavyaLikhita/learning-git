@@ -37,10 +37,6 @@ public class ProductController {
 		types.add("grocery");
 		types.add("Home appliances");
 		model.put("dataitem", types);
-		
-		
-		
-		
 		return "addProduct";
 	}
 	
@@ -87,8 +83,8 @@ public class ProductController {
 	@RequestMapping(value="/searchdata",method = RequestMethod.POST)
 	public ModelAndView showData(@RequestParam("pid") int prodId) {
 		
-		Product pro=prodservice.searchProduct(prodId);
-		return new ModelAndView("ShowProduct","dataobj",pro);
+		Product pro=prodservice.search(prodId);
+		return new ModelAndView("SearchProduct","dataobj",pro);
 		
 	}
 	

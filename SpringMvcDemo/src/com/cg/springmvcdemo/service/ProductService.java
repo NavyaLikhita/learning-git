@@ -8,7 +8,7 @@ public interface ProductService {
 	
 	public Product addProduct(Product product);
 	public List<Product> showProducts();
-	public Product searchProduct(int productId);
+	
 	public void removeData(int prodId);
 	public Product search(int productId);
 }

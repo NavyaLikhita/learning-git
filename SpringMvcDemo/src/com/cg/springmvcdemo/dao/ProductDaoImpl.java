@@ -1,10 +1,13 @@
 package com.cg.springmvcdemo.dao;
 
-import java.util.ArrayList;
+
+
+
+
+import javax.persistence.Query;
 
 import java.util.List;
 
-import javax.persistence.Query;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -30,22 +33,23 @@ public class ProductDaoImpl implements ProductDao{
 		return myList;
 	}
 
-	@Override
-	public Product findByProductId(int productId) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	@Override
-	public void remove(int proIid) {
+	public void remove(int prodId) {
 		// TODO Auto-generated method stub
+		Product product=manager.find(Product.class, prodId);
+		manager.remove(product);
+		
 		
 	}
 
 	@Override
 	public Product search(int productId) {
 		// TODO Auto-generated method stub
-		return null;
+		Product product=manager.find(Product.class, productId);
+		
+		return product;
 	}
 
 

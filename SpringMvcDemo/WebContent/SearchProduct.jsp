@@ -19,6 +19,6 @@
 </tr>
 </a:form>
 </table>
-
+<jsp:include page="FoundProduct.jsp"></jsp:include>
 </body>
 </html>

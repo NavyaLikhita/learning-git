@@ -92,6 +92,7 @@ public class Product {
 		this.online = online;
 	}
 
+
 	public String getProductColor() {
 		return productColor;
 	}
